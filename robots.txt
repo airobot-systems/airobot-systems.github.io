@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://airobot-systems.jp/sitemap.xml
