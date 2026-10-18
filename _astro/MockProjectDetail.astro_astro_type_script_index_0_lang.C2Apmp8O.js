@@ -1,0 +1,1 @@
+document.querySelectorAll(`.article-body img`).forEach(e=>{if(e.closest(`a`))return;let t=document.createElement(`a`);t.href=e.currentSrc||e.src,t.setAttribute(`aria-label`,`${e.alt||`研究画像`}を原寸で表示`),e.before(t),t.append(e)});

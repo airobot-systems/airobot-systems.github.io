@@ -1,0 +1,1 @@
+document.querySelectorAll(`.mobile-nav a`).forEach(e=>e.addEventListener(`click`,()=>{e.closest(`details`)?.removeAttribute(`open`)}));
