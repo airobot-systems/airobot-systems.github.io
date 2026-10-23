@@ -1,0 +1,1 @@
+var e=new WeakMap;function t(t){if(e.has(t))return e.get(t);let n=t.documentElement.hasAttribute(`data-dark`),r=new Set,i={get:()=>n,set(e){if(e=!!e,n!==e){n=e,t.documentElement.toggleAttribute(`data-dark`,n);for(let e of r)e(n)}},subscribe(e){return r.add(e),()=>r.delete(e)}};return t.addEventListener(`keydown`,e=>{e.key===`Escape`&&i.set(!1)}),e.set(t,i),i}export{t};

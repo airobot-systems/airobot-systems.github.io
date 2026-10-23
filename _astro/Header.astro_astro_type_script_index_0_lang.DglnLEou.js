@@ -1,0 +1,1 @@
+import{t as e}from"./manual-night.DVM-PcPS.js";var t=document.querySelector(`[data-theme-toggle]`);if(t){let n=e(document),r=()=>t.setAttribute(`aria-pressed`,String(n.get()));r(),n.subscribe(r),t.addEventListener(`click`,()=>n.set(!n.get())),t.hidden=!1}
